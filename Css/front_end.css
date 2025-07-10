@@ -1,20 +1,27 @@
-.fixed-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
-  }
-  nav a {
-    color: inherit;
-    margin-right: 20px;
-  }
-  nav {
-    transition: background-color 0.3s;
-  }
-  .card {
-    transition: background-color 0.3s, color 0.3s;
-    transform: scale(0.95);
-  }
-  .TIME {
-    color: #129700;
-  }
+body {
+  background-color: #0080ff;
+  overflow-x: hidden;  /* يمنع الشريط الأفقي */
+  overflow-y: auto;    /* يسمح بالتمرير العمودي */
+}
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.card {
+  transform: scale(0.9);
+
+}
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
