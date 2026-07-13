@@ -1,52 +1,85 @@
-$(window).scroll(function () {
-  if ($(this).scrollTop() >= 200) {
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() >= 80) {
     $("#navbar").addClass("noTransparent");
   } else {
     $("#navbar").removeClass("noTransparent");
   }
 });
+
 $(document).ready(function () {
+  const circleSize = window.innerWidth <= 575 ? 112 : 130;
+
   $(".circle")
     .circleProgress({
       startAngle: -Math.PI / 2,
-      fill: "#0575e6",
+      size: circleSize,
+      thickness: 10,
+      lineCap: "round",
+      emptyFill: "rgba(5, 117, 230, 0.12)",
+      fill: {
+        gradient: ["#74b9ff", "#0575e6"],
+        gradientAngle: Math.PI / 4,
+      },
+      animation: { duration: 1400, easing: "circleProgressEasing" },
     })
     .on("circle-animation-progress", function (event, progress, stepValue) {
       $(this)
         .find("span")
-        .html(Math.round(stepValue * 100) + "%");
+        .text(Math.round(stepValue * 100) + "%");
     });
+
+  $(".reveal").each(function (index) {
+    const el = $(this);
+    setTimeout(function () {
+      el.addClass("is-visible");
+    }, 120 + index * 140);
+  });
 });
-const radios = document.querySelectorAll('input[type="radio"]');
+
+const radios = document.querySelectorAll(".gallery-work input[type='radio']");
 const items = document.querySelectorAll(".items .item");
+
+function filterGallery(radioId) {
+  items.forEach(function (item) {
+    item.classList.add("disable");
+  });
+
+  if (radioId === "item-type-all") {
+    items.forEach(function (item) {
+      item.classList.remove("disable");
+    });
+    return;
+  }
+
+  document.querySelectorAll(".items ." + radioId).forEach(function (item) {
+    item.classList.remove("disable");
+  });
+}
 
 radios.forEach(function (radio) {
   radio.addEventListener("change", function () {
-    // تعطيل التفاعل مع جميع العناصر
-    items.forEach(function (item) {
-      item.classList.add("disable");
-    });
-
-    // تمكين التفاعل مع العناصر المحددة فقط
-    if (radio.id === "item-type-all") {
-      items.forEach(function (item) {
-        item.classList.remove("disable");
-      });
-    } else if (radio.id === "item-type-1") {
-      const type1Items = document.querySelectorAll(".item-type-1");
-      type1Items.forEach(function (item) {
-        item.classList.remove("disable");
-      });
-    } else if (radio.id === "item-type-2") {
-      const type2Items = document.querySelectorAll(".item-type-2");
-      type2Items.forEach(function (item) {
-        item.classList.remove("disable");
-      });
-    } else if (radio.id === "item-type-3") {
-      const type3Items = document.querySelectorAll(".item-type-3");
-      type3Items.forEach(function (item) {
-        item.classList.remove("disable");
-      });
-    }
+    filterGallery(radio.id);
   });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    return;
+  }
+
+  const subject = encodeURIComponent("رسالة من موقع ناجي صبحة — " + name);
+  const body = encodeURIComponent(
+    "الاسم: " + name + "\nالبريد: " + email + "\n\nالرسالة:\n" + message
+  );
+
+  window.location.href =
+    "mailto:nageammar628@gmail.com?subject=" + subject + "&body=" + body;
 });

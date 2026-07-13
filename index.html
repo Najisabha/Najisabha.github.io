@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Portfolio of Naji Sabha, a front-end developer and trainer Palestinian web programmer "/>
-    <meta name="keywords" content="Naji Sabha, Naji Ammar Sabha , Palestinian web programmer, Front-end Developer, Portfolio, Web Development, HTML, CSS, JavaScript, PHP, MySQL" />
+    <meta
+      name="description"
+      content="ناجي عمار صبحة — مطور ومدرب واجهات أمامية في فلسطين. معرض أعمال في Front End و Back End و Full Stack PHP."
+    />
+    <meta
+      name="keywords"
+      content="ناجي صبحة, مطور ويب, Front-end, PHP, Laravel, فلسطين, طولكرم"
+    />
     <meta name="author" content="Naji Sabha" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#0575e6" />
     <meta name="robots" content="index, follow" />
-    <meta name="google-site-verification" content="your-google-site-verification-code" />
     <link rel="canonical" href="https://najisabha.github.io/" />
-    <link rel="alternate" href="https://najisabha.github.io/" hreflang="ar" />
-    <link rel="alternate" href="https://najisabha.github.io/" hreflang="en" />
-    <link rel="alternate" href="https://najisabha.github.io/" hreflang="x-default" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title> Naji Sabha </title>
-    <link rel="stylesheet" href="Css/Home.css" />
-    <link rel="icon" href="img/naji.png" />
-    <link rel="stylesheet" href="bootstrap 5/css/bootstrap.rtl.min.css" />
-    <!--  -->
-  
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ar_PS" />
+    <meta property="og:url" content="https://najisabha.github.io/" />
+    <meta property="og:title" content="ناجي صبحة | مطور واجهات المستخدم" />
+    <meta
+      property="og:description"
+      content="مطور ومدرب واجهات أمامية — Front End، Back End، و Full Stack PHP."
+    />
+    <meta property="og:image" content="https://najisabha.github.io/img/profile/avatar.jpg" />
+    <title>ناجي صبحة | مطور واجهات المستخدم</title>
+    <link rel="icon" href="img/profile/avatar.jpg" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -28,23 +37,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!--     
-  font-family: "Cairo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; -->
-    <!--  -->
+    <link rel="stylesheet" href="Css/Home.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="90">
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-      <div class="container-fluid">
+      <div class="container">
+        <a class="navbar-brand" href="#header">ناجي صبحة</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,430 +56,391 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="فتح القائمة"
         >
           <i class="fa-solid fa-bars"></i>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#header">
-                عني
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#licence"> الشهادات والمؤهلات </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#skills">
-                المهارات
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery"> اعمالي </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#testimoials">
-                اراء العملاء
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-info"> تواصل معنى </a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" href="#header">عني</a></li>
+            <li class="nav-item"><a class="nav-link" href="#licence">الشهادات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">أعمالي</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">آراء العملاء</a></li>
+            <li class="nav-item"><a class="nav-link nav-cta" href="#contact-info">تواصل معي</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <header id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="Me">
-               <div class="row">
-                      <div class="col-5"></div>
-                      <div class="col-2"><img src="img/naji.png" alt="" /></div>
-                      <div class="col-5"></div>
-                    <h1 class="text-center name" >
-                      ناجي عمار صبحة
-                      <span >- مطور واجهات المستخدم</span>
-                    </h1>
-                    <div class="col-4"></div>
-                    <div class="col-3 Social">
-                      
-                    <ul class="Social-media">
-                      <li class="media">
-                        <a href="https://www.facebook.com/share/1BMaNqzE3w/?mibextid=LQQJ4d"><i class="fa-brands fa-square-facebook"></i></a>
-                      </li>
-                      <li class="media">
-                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                      </li>
-                      <li class="media">
-                        <a href="https://www.instagram.com/naji_sabha/profilecard/?igsh=MWhxdDRyN21ybGp5bg=="><i class="fa-brands fa-square-instagram"></i></a></i>
-                      </li>
-                      <li class="media">
-                        <a href="https://youtube.com/@najisabha6451?si=9kjTmg0_Ii5LURxJ"><i class="fa-brands fa-youtube"></i></a></i>
-                      </li>
-                      <li class="media">
-                        <a href="https://github.com/Najisabha"><i class="fa-brands fa-square-github"></i></a>
-                      </li>
-                    </ul>
-                    </div>
-                    <div class="col-4"></div>
-                    <h6 class="text-center">
-                      مطور ومدرب واجهات امامية مقيم في فلسطين (طولكرم-عنبتا ) بخبرة اكثر
-                      من سنتين
-                    </h6>
-                    <div class="col-12"><hr /></div>
-                    <div class="col-md-2 col-0"></div>
-                    <div class="col-md-8 col-12">
-                      <p class="text-center">  </p></div>
-                    <div class="col-md-2 col-0"></div>
-                      <a  href="./img/CV NAJI.pdf" download=""><i class="fa-solid fa-download"></i> تحميل السيرة الذاتية </a>
-            </div>
 
+    <header id="header" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 order-lg-1 order-2">
+            <div class="hero-photo reveal">
+              <img src="img/profile/avatar.jpg" alt="ناجي عمار صبحة" width="360" height="360" />
+            </div>
+          </div>
+          <div class="col-lg-7 order-lg-2 order-1">
+            <div class="hero-copy reveal">
+              <p class="hero-kicker">مطور واجهات المستخدم</p>
+              <h1 class="hero-name">ناجي عمار صبحة</h1>
+              <p class="hero-lead">
+                مطور ومدرب واجهات أمامية من فلسطين (طولكرم — عنبتا) بخبرة أكثر من
+                سنتين في بناء تجارب ويب واضحة وحديثة.
+              </p>
+              <div class="hero-actions">
+                <a class="btn-primary-soft" href="./img/documents/cv.pdf" download>
+                  <i class="fa-solid fa-download"></i>
+                  تحميل السيرة الذاتية
+                </a>
+                <a class="btn-outline-soft" href="#contact-info">تواصل معي</a>
+              </div>
+              <ul class="hero-social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/share/1BMaNqzE3w/?mibextid=LQQJ4d"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/naji_sabha/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://youtube.com/@najisabha6451"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Najisabha"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section class="licence" id="licence">
-        <div class="container">
-            <div class="licence-titel">
-              <h2 class="text-center">
-                <i class="fa-solid fa-graduation-cap"></i>الشهادات و المؤهلات </h2>
-              </div>
-            <ul class="timeline">
-              <li>
-                <div class="timebox">
-                  <h4>خريج مدرسة طولكرم الثانوية الصناعية <span>2023 يونيو </span></h4>
-                  <p> تخرج من المدرسة الثانوية الصناعية بتخصص لحام و تشكيل معادن وحاصل على معدل 74.5 في الثانوية العامة  </p>
-                </div>
-              </li>
-              <li>
-                <div class="timebox">
-                  <h4>طالب في جامعة القدس المفتوحة - بكالوريوس  <span>2026 يونيو </span></h4>
-                  <p> طالب جمعي حاليا في السنة الثانية  </p>
-                </div>
-              </li>
-              <li>
-                <div class="timebox">
-                  <h4>مدرب برمجة  <span> still now  </span></h4>
-                  <p> مدرب في مجال البرمجة اعطيت دورات في معهد جلاكسي و في مركز واصل في عنبتا  </p>
-                </div>
-              </li>
-              <li>
-                <div class="timebox">
-                  <h4>مطور ويب في فلسطين  <span>still now </span></h4>
-                  <p> يعمل حاليا مطور ويب في شركة شغف للتسويق كمبرمج ويب  </p>
-                </div>
-              </li>
-            </ul>
-        </div>
-      </section>
-      <section class="skills" id="skills">
-        <div class="overly">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.97">
-                  <span>97%</span>
-                </div>
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.88">
-                  <span>88%</span>
-                </div>
-                <p>CSS</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.70">
-                  <span>70%</span>
-                </div>
-                <p>SASS</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.95">
-                  <span>95%</span>
-                </div>
-                <p>bootstrap</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.70">
-                  <span>70%</span>
-                </div>
-                <p>Javascript</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.85">
-                  <span>85%</span>
-                </div>
-                <p>  ++C</p>
-              </div>
-          </div>
-            <div class="col-md-2 col-4 ">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.80">
-                  <span>80%</span>
-                </div>
-                <p>PHP</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.90">
-                  <span>90%</span>
-                </div>
-                <p>MYSQL</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.85">
-                  <span>85%</span>
-                </div>
-                <p>python </p>
-              </div>
-            </div>
-            <div class="col-md-2 col-4 ">
-              <div class="skillbox text-center">
-                <div class="circle" data-value="0.50">
-                  <span>50%</span>
-                </div>
-                <p> assembly </p>
-              </div>
-            </div>
-        </div>
-        </div>
-      </section>
-    <section class="gallery" id="gallery">
-      <div class="gallery_titel text-center">
-        <i class="fa-brands fa-windows"></i>
-        <h2>الاعمال السابقة</h2>
-      </div>
-      <div class="container">
-        <div class="gallery-work text-center">
-          <!-- أزرار التصنيف -->
-          <input
-            type="radio"
-            name="radio-set-1"
-            id="item-type-all"
-            class="item-type-all d-none"
-            checked="checked"
-          />
-          <label for="item-type-all" class="label-type-all">الكل</label>
-          <input
-            type="radio"
-            name="radio-set-1"
-            id="item-type-1"
-            class="item-type-1 d-none"
-          />
-          <label for="item-type-1" class="label-type-1">تصميم</label>
-          <input
-            type="radio"
-            name="radio-set-1"
-            id="item-type-2"
-            class="item-type-2 d-none"
-          />
-          <label for="item-type-2" class="label-type-2">Front end</label>
-          <input
-            type="radio"
-            name="radio-set-1"
-            id="item-type-3"
-            class="item-type-3 d-none"
-/>
-          <label for="item-type-3" class="label-type-3">Back end</label>
-          <!-- هنا نضع الصور الخاصة بالاعمال -->
-          <div class="row items">
-                        <!-- <div class="col-md-4 col-6 item item-type-1">
-              <a href="Front_end.html"><img src="img/gallery/F (2).jpg" alt="image4" /></a>
-            </div> -->
-            <!-- <div class="col-md-4 col-6 item item-type-1">
-              <a href="Front_end.html"><img src="img/gallery/F (6).jpg" alt="image5" /></a>
-            </div> -->
-            <!-- <div class="col-md-4 col-6 item item-type-3">
-              <a href="Front_end.html"><img src="img/gallery/F (4).jpg" alt="image6" /></a>
-            </div> -->
-            <!-- <div class="col-md-4 col-6  item item-type-1">
-              <a href="Front_end.html"><img src="img/gallery/F (5).jpg" alt="image1" /></a>
-            </div> -->
-            <!-- <div class="col-md-4 col-6 item item-type-3">
-              <a href="Front_end.html"><img src="img/gallery/F (3).jpg" alt="image2" /></a>
-            </div> -->
-            <div class="col-md-4 col-6 item item-type-2">
-              <a href="Front_end.html"><img src="img/gallery/Front end.png" alt="image1" /></a>
-            </div>
-            <div class="col-md-4 col-6 item item-type-3">
-              <a href="back_end.html"><img src="img/gallery/Back end.png" alt="image2" /></a>
-            </div>
-            <div class="col-md-4 col-6 item item-type-4">
-              <a href="Full_Stack_PHP.html"><img src="img/gallery/FULL STACK PHP Laravel.png" alt="image3" /></a>
-            </div>
 
+    <main>
+      <section class="licence section-pad" id="licence">
+        <div class="container">
+          <div class="section-head text-center">
+            <span class="section-eyebrow">المسار</span>
+            <h2>الشهادات والمؤهلات</h2>
+            <p>محطات أساسية في الدراسة والعمل والتدريب</p>
+          </div>
+          <ul class="timeline">
+            <li>
+              <div class="timebox">
+                <span class="time-badge"> 2023</span>
+                <h3>خريج مدرسة طولكرم الثانوية الصناعية</h3>
+                <p>
+                  تخرجت من الثانوية الصناعية بتخصص لحام وتشكيل معادن، بمعدل
+                  74.5 في الثانوية العامة.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timebox">
+                <span class="time-badge"> 2026</span>
+                <h3>خريج بكالوريوس في جامعة القدس المفتوحة</h3>
+                <p>تخصص انظمة معلومات حاسوبية بمعدل 80 .</p>
+              </div>
+            </li>
+            <li>
+              <div class="timebox">
+                <span class="time-badge">من 2024 حتى الآن</span>
+                <h3>مدرب برمجة</h3>
+                <p>درّبت دورات برمجة في معهد جلاكسي ومركز واصل في عنبتا.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timebox">
+                <span class="time-badge">من 2024 حتى الآن</span>
+                <h3>مطور ويب</h3>
+                <p>أعمل حالياً مطور ويب في شركة شغف للتسويق.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skills section-pad" id="skills">
+        <div class="container">
+          <div class="section-head text-center">
+            <span class="section-eyebrow">الخبرة التقنية</span>
+            <h2>المهارات</h2>
+            <p>أدوات وتقنيات أستخدمها في بناء الواجهات والأنظمة</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skillbox">
+              <div class="circle" data-value="0.97"><span>97%</span></div>
+              <p>HTML</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.88"><span>88%</span></div>
+              <p>CSS</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.70"><span>70%</span></div>
+              <p>SASS</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.95"><span>95%</span></div>
+              <p>Bootstrap</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.88"><span>88%</span></div>
+              <p>Tailwind CSS</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.70"><span>70%</span></div>
+              <p>JavaScript</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.80"><span>80%</span></div>
+              <p>React</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.75"><span>75%</span></div>
+              <p>Next.js</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.85"><span>85%</span></div>
+              <p>C++</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.80"><span>80%</span></div>
+              <p>PHP</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.82"><span>82%</span></div>
+              <p>Laravel</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.90"><span>90%</span></div>
+              <p>MySQL</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.78"><span>78%</span></div>
+              <p>MongoDB</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.85"><span>85%</span></div>
+              <p>Python</p>
+            </div>
+            <div class="skillbox">
+              <div class="circle" data-value="0.50"><span>50%</span></div>
+              <p>Assembly</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contacts" id="contacts">
-        <div class="overlay">
-          <div class="container">
-            <div class="testimoials" id="testimoials" >
-              <div class="testimoials-titel text-center mb-5">
-                <h2>ماذا يقول عنا العملاء</h2>
+      </section>
+
+      <section class="gallery section-pad" id="gallery">
+        <div class="container">
+          <div class="section-head text-center">
+            <span class="section-eyebrow">المعرض</span>
+            <h2>الأعمال السابقة</h2>
+            <p>استعرض المشاريع حسب التخصص</p>
+          </div>
+          <div class="gallery-work text-center">
+            <input type="radio" name="radio-set-1" id="item-type-all" class="item-type-all d-none" checked />
+            <label for="item-type-all" class="label-type-all">الكل</label>
+            <input type="radio" name="radio-set-1" id="item-type-2" class="item-type-2 d-none" />
+            <label for="item-type-2" class="label-type-2">Front End</label>
+            <input type="radio" name="radio-set-1" id="item-type-3" class="item-type-3 d-none" />
+            <label for="item-type-3" class="label-type-3">Back End</label>
+            <input type="radio" name="radio-set-1" id="item-type-4" class="item-type-4 d-none" />
+            <label for="item-type-4" class="label-type-4">Full Stack</label>
+
+            <div class="row items g-4 justify-content-center mt-2">
+              <div class="col-md-4 col-sm-6 item item-type-2">
+                <a href="Front_end.html" class="gallery-card">
+                  <img src="img/gallery/category-front-end.png" alt="مشاريع Front End" />
+                  <div class="gallery-card-body">
+                    <strong>Front End</strong>
+                    <span>تصفح المشاريع</span>
+                  </div>
+                </a>
               </div>
-              <div class="slider">
-                <div id="Carousel" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <div class="col-md-4 col-sm-6 item item-type-3">
+                <a href="back_end.html" class="gallery-card">
+                  <img src="img/gallery/category-back-end.png" alt="مشاريع Back End" />
+                  <div class="gallery-card-body">
+                    <strong>Back End</strong>
+                    <span>تصفح المشاريع</span>
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="carousel-coption d-flex flex-column justify-content-center align-items-center text-center">
-                        <img src="img/slider/1.png" class=" rounded-circle" alt="...">
-                        <h4> شركة شغف   <span> شركة تسويق وادارة الحسابات الرقمية </span></h4>
-                        <p>
-                        </p>
-                        <ul class="list-inline text-center">
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-facebook"></i>
-                          </a></li>
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                          </a></li>
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-tiktok"></i>
-                          </a></li>
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-x-twitter"></i>
-                          </a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="carousel-item ">
-                      <div class="carousel-coption d-flex flex-column justify-content-center align-items-center text-center">
-                        <img src="img/slider/3.png" class=" rounded-circle" alt="...">
-                        <h4> شركة جلاكسي <span> اقوة معهد تدريبي في فلسطين </span></h4>
-                        <p> </p>
-                        <ul class="list-inline text-center">
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-facebook"></i>
-                          </a></li>
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                          </a></li>
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-tiktok"></i>
-                          </a></li>
-                          <li class="list-inline-item"><a href="">
-                            <i class="fa-brands fa-x-twitter"></i>
-                          </a></li>
-                        </ul>
-                      </div>
-                    </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 item item-type-4">
+                <a href="Full_Stack_PHP.html" class="gallery-card">
+                  <img src="img/gallery/category-full-stack.png" alt="مشاريع Full Stack PHP Laravel" />
+                  <div class="gallery-card-body">
+                    <strong>Full Stack PHP</strong>
+                    <span>تصفح المشاريع</span>
                   </div>
-                  <!-- هون ازرار التحكم يمين و يسار -->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
-                    <i class="fa-solid fa-angle-right fa-2x"></i>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
-                    <i class="fa-solid fa-angle-left fa-2x"></i>
-                  </button>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-            
-      <div class="contact-info" id="contact-info">
-        
-       <div class="container">
-        <div class="contact-titel text-center">
-          <h3> تواصل معي </h3>
+
+      <section class="contacts section-pad" id="testimonials">
+        <div class="container">
+          <div class="section-head text-center">
+            <span class="section-eyebrow">الثقة</span>
+            <h2>ماذا يقول العملاء</h2>
+            <p>شراكات عمل وتدريب حقيقية</p>
+          </div>
+          <div class="slider">
+            <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="شريحة 1"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="شريحة 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <article class="testimonial-card">
+                    <img src="img/testimonials/shaghaf.png" class="rounded-circle" alt="شركة شغف" />
+                    <h3>
+                      شركة شغف
+                      <span>تسويق وإدارة الحسابات الرقمية</span>
+                    </h3>
+                    <p>
+                      تعاون احترافي في تطوير واجهات الويب وتنفيذ المتطلبات بسرعة
+                      وجودة عالية.
+                    </p>
+                  </article>
+                </div>
+                <div class="carousel-item">
+                  <article class="testimonial-card">
+                    <img src="img/testimonials/galaxy.png" class="rounded-circle" alt="شركة جلاكسي" />
+                    <h3>
+                      معهد جلاكسي
+                      <span>تدريب وتعليم</span>
+                    </h3>
+                    <p>
+                      أسلوب تدريب واضح وعملي ساعد المتدربين على فهم أساسيات
+                      البرمجة وتطبيقها.
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                <span class="visually-hidden">السابق</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                <span class="visually-hidden">التالي</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-8 ">
-            <div class="contact-form">
-              <div class="contact-form">
-                <form class="contact-form" action="" method="post">
-                  <div class="row">
+      </section>
+
+      <section class="contact-section section-pad" id="contact-info">
+        <div class="container">
+          <div class="section-head text-center">
+            <span class="section-eyebrow">لنبدأ</span>
+            <h2>تواصل معي</h2>
+            <p>أرسل فكرتك وسأرد عليك في أقرب وقت</p>
+          </div>
+          <div class="contact-shell">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-7">
+                <form id="contact-form" class="contact-form" novalidate>
+                  <div class="row g-3">
                     <div class="col-sm-6">
                       <label for="name">اسمك</label>
-                      <input type="text" name="name" id="name" placeholder="اسمك" class="form-control">
+                      <input type="text" name="name" id="name" placeholder="اكتب اسمك" class="form-control" required autocomplete="name" />
                     </div>
                     <div class="col-sm-6">
-                      <label for="email">ايميلك</label>
-                      <input type="email" name="email" id="email" placeholder="ايميلك" class="form-control">
+                      <label for="email">بريدك الإلكتروني</label>
+                      <input type="email" name="email" id="email" placeholder="name@example.com" class="form-control" required autocomplete="email" />
                     </div>
                     <div class="col-12">
                       <label for="message">رسالتك</label>
-                      <textarea name="message" id="message" placeholder="رسالتك" class="form-control"></textarea>
+                      <textarea name="message" id="message" rows="5" placeholder="كيف يمكنني مساعدتك؟" class="form-control" required></textarea>
                     </div>
-                    <div class="col-md-4"></div>
-                    <button type="submit" class=" col-md-4 btn btn-primary mt-4"> ارسال </button>
-                    <div class="col-md-4"></div>
+                    <div class="col-12">
+                      <button type="submit" class="btn-send">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        إرسال الرسالة
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>
-              
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="collme-info">
-              <h3> معلومات التواصل </h3>
-              <div class="col-12"><a href="mailto:nageammar628@gmail.com" type="email">nageammar628@gmail.com</a></div>
-              <div class="col-12"><a href="tel:+970598134332" type="email">+970598134332</a></div>
-              <hr>
-              <div class="col-12">
-                <ul class="contact-us list-inline">
-                  <li class="list-inline-item">
-                    <a href="https://www.facebook.com/share/1BMaNqzE3w/?mibextid=LQQJ4d">
+              <div class="col-lg-5">
+                <aside class="contact-aside">
+                  <h3>معلومات التواصل</h3>
+                  <a class="contact-line" href="mailto:nageammar628@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    nageammar628@gmail.com
+                  </a>
+                  <a class="contact-line" href="tel:+970598134332" dir="ltr">
+                    <i class="fa-solid fa-phone"></i>
+                    +970 598 134 332
+                  </a>
+                  <div class="aside-social">
+                    <a href="https://www.facebook.com/share/1BMaNqzE3w/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/naji_sabha/profilecard/?igsh=MWhxdDRyN21ybGp5bg==">
+                    <a href="https://www.instagram.com/naji_sabha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://github.com/Najisabha">
+                    <a href="https://github.com/Najisabha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                       <i class="fa-brands fa-github"></i>
                     </a>
-                  </li>
-                </ul>
+                  </div>
+                </aside>
               </div>
             </div>
           </div>
         </div>
-       </div>
-      </div>
-            </div>
-            <div class="copyrigth"> جميع الحقوق محفوظة  </div>
-          </div>
-          
-        </div>
       </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="site-footer">
+      <div class="container">
+        جميع الحقوق محفوظة © ناجي صبحة
+        <span id="year"></span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/circle-progress.min.js"></script>
     <script src="js/Home.js"></script>
   </body>
